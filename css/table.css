@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 80%;
+}
+
+table caption {
+    margin-bottom: 0.25rem;
+    font-style: italic;
+    caption-side: top;
+}
+
+td, th {
+    border-style: solid;
+    padding: 0.25rem;
+}
+
+th {
+    background-color: darkgray;
+}
+
+tfoot td {
+    background-color: lightgray;
+}
