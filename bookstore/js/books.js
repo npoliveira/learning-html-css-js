@@ -1,7 +1,7 @@
 let _books = [
     {
-        id: 'A1.1',
-        title: 'Telc - Deutsch für die Integration',
+        id: 524,
+        title: 'Telc - A1.1 - Deutsch für die Integration',
         isbn: '3946447066',
         publisher: {
             id: 1501,
@@ -27,8 +27,8 @@ let _books = [
         ],
     },
     {
-        id: 'A1.2',
-        title: 'Telc - Deutsch für die Integration',
+        id: 525,
+        title: 'Telc - A1.2 - Deutsch für die Integration',
         isbn: '33946447074',
         publisher: {
             id: 1502,
