@@ -55,18 +55,18 @@ let _books = [
     },
 ];
 
-function getBooks(preticate) {
+function getBooks(filter) {
     const requestDate = new Date();
     const requestId = Math.floor(Math.random() * 10000);
 
-    if (preticate === undefined) {
-        preticate = e => true;
+    if (filter === undefined) {
+        filter = e => true;
     }
 
-    var response = {
+    let response = {
         id: requestId,
         date: requestDate,
-        books: _books.filter(preticate),
+        books: _books.filter(filter),
     }
 
     return response;
