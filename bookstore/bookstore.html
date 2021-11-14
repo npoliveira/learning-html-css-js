@@ -18,7 +18,7 @@
                 <th>Chapters</th>
             </tr>
         </thead>
-        <tbody id="books.items">
+        <tbody id="books_items">
             <tr>
                 <td>Telc</td>
                 <td>Bamf</td>
@@ -33,37 +33,8 @@
             </tr>
         </tbody>
     </table>
-    <script src="./js/books.js"></script>
     <script src="../js/index.js"></script>
-    <script>
-        clearTBody(); // Clear the table sample data.
-        let response = getBooks();
-        let books = response.books;
-
-        // let table = document.getElementsByTagName("table")[0]; // Gets the first table in the page
-        // let table = document.getElementById("books"); // Gets the table by ID
-        let tbody = document.getElementById("books.items"); // Gets the tbody by ID
-
-        for (let i = 0; i < books.length; i++) {
-            let book = books[i];
-            let publisher = book.publisher;
-            let chapters = book.chapters;
-
-            // creates a new tr (row) for each book.
-            let tr = tbody.insertRow();
-
-            // creates a new td (cell) for each attribute.
-            let tdBook = tr.insertCell(0);
-            let tdAuthor = tr.insertCell(1);
-            let tdPublishedAt = tr.insertCell(2);
-            let tdChapters = tr.insertCell(3);
-
-            //fills the each td content.
-            tdBook.innerText = book.title;
-            tdAuthor.innerText = publisher.name;
-            tdPublishedAt.innerText = book.publishedAt;
-            tdChapters.innerText = chapters.length;
-        }
-    </script>
+    <script src="./js/books.js"></script>
+    <script src="./js/bookstore.js"></script>
 </body>
 </html>

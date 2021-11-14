@@ -22,6 +22,6 @@ function clearTBody(tBody) {
         // Gets the first tBody.
         tBody = tBodies[0];
     }
-    tBody.innerHTML = ""; // Clear the content of tBody.
 
+    tBody.innerHTML = ""; // Clear the content of tBody.
 }
