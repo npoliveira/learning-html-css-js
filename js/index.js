@@ -33,6 +33,7 @@ function clearTableCaption(table) {
         let tables = document.body.getElementsByTagName('table');
 
         if (tables.length == 0) {
+            console.warn('clearTableCaption was called without a table and no table was found in the document.');
             return;
         }
 
