@@ -7,7 +7,7 @@ let tBody = document.getElementById("transactions_details");
 for (let i = 0; i < transactions.length; i++) {
     let transaction = transactions[i];
 
-    let type = transaction.transactionType
+    let transactionType = transaction.transactionType
     let operator = transaction.operator
 
     let tr = tBody.insertRow();
@@ -18,9 +18,15 @@ for (let i = 0; i < transactions.length; i++) {
     let tdValue = tr.insertCell();
     let tdNome = tr.insertCell();
 
-    tdId.innerText = transaction.id;
+    tdId.innerText = `${transaction.id}-${operator.id}`;
     tdDate.innerText = transaction.data;
-    tdType.innerText = type.name;
+    tdType.innerText = capitalize(transactionType.name);
     tdValue.innerText = transaction.value;
     tdNome.innerText = operator.name;
+
+    if (transactionType.name === "input") {
+        tdType.classList.add("input");
+    } else if (transactionType.name === "output") {
+        tdType.classList.add("output");
+    }
 }

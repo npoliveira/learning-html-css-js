@@ -1,0 +1,13 @@
+tBody td:nth-child(4)::before {
+    content: "€";
+}
+
+.input {
+    background-color: palegreen;
+    font-weight: bold;
+}
+
+.output {
+    background-color: lightsalmon;
+    font-weight: bold;
+}
