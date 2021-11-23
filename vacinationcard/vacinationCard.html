@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="./css/vaccinationCard.css">
+    <title>Vaccination Card</title>
+</head>
+<body>
+    <div>
+        <h1>Vaccination Card </h1>
+        <h2>Personal Information</h2>
+        <div>
+            <p>Name: </p>
+            <p id="card_name">João</p>
+        </div>
+        <div>
+            <p>Address: </p>
+            <p id="card_address">Rua A</p>
+        </div>
+        <div>
+            <p>Birthday: </p>
+            <p id="card_birthday">05/10/1994</p>
+        </div>
+    </div>
+
+    <table>
+        <caption>Vacinas e Soros</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Laboratory</th>
+                <th>Date</th>
+                <th>Next</th>
+                <th>Lot</th>
+            </tr>
+        </thead>
+        <tbody id="vac_details">
+            <tr>
+                <td>15</td>
+                <td>Hepatite</td>
+                <td>0028 - Bayer</td>
+                <td>20/11/2015</td>
+                <td>20/11/2025</td>
+                <td>152587943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="vac_total" colspan="6"></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    <script src="../js/index.js"></script>
+    <script src="./js/vaccinations.js"></script>
+    <script src="./js/vacinationCard.js"></script>
+</body>
+</html>
